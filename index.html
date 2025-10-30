@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一次项目作业</title>
+     <form action="#" method="post"></form>
+    <style>
+  
+        h1{
+           font-size: 10px;
+           background-color: rgb(228, 228, 228);
+        }
+        table{
+           
+            box-shadow: 0 0 10px rgb(129, 124, 124);
+            background-color: rgb(241, 241, 241);
+        }
+   
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        input[type="submit"]{
+            background-color: rgb(34, 147, 240);
+            color: white;
+        }
+        input[type="reset"]{
+            background-color:rgb(46, 133, 247);
+            color: white;
+        }
+    </Style>
+</head>
+<body>
+    <h1>挂号收费>窗口挂号 </h1>
+     <input type="submit" value="挂号" >
+     <input type="reset" value="清空">
+     <h2>基本信息：</h2>
+     <table>
+        <tr>
+            <td>病历号：</td>
+            <td><input type="text" name="病历号" ></td>
+        
+        
+            <td>姓名：</td>
+            <td><input type="text" name="姓名" ></td>
+        
+        
+            <td>性别：</td>
+            <td >    <select name="性别" style="width: 120px;">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td><input type="number" name="年龄" ></td>
+     
+            <td>出生日期：</td>
+            <td><input type="date" name="出生日期" ></td>
+       
+            <td>身份证：</td>
+            <td><input type="text" name="身份证" ></td>
+        </tr>
+        <tr>
+            <td >家庭住址：</td>
+            <td colspan="6"><input type="text" name="家庭住址" size="100"  ></td>
+        </tr>
+     </table>
+     <h3>
+        挂号信息：
+     </h3>
+     <table>
+        <tr>
+            <td>结算类别：</td>
+            <td>
+                <select name="结算类别" style="width: 120px;">
+                    <option value="自费">自费</option>
+                    <option value="医保">医保</option>
+                    <option value="免费">免费</option>
+                </select>
+            </td>
+           <td>挂号日期：</td>
+            <td><input type="date" name="看诊日期" ></td>
+            <td>午别</td>
+            <td>
+                <select name="午别" style="width: 120px;">
+                    <option value="上午">上午</option>
+                    <option value="下午">下午</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>挂号科室：</td>
+            <td>
+                <select name="挂号科室" style="width: 120px;">
+                    <option value="呼吸内科">呼吸内科</option>
+                    <option value="神经内科">神经内科</option>
+                    <option value="普外科">普外科</option>
+                    <option value="骨科">骨科</option>
+                    <option value="儿科">儿科</option>
+                </select>
+            </td>
+            <td>号别：</td>
+            <td>
+                <select name="号别" >
+                    <option value="主治医师">主治医师</option>
+                    <option value="主任医生">主任医生</option>
+                    <option value="副主任医生">副主任医生</option>
+                </select>
+            </td>
+            <td>看诊医生：</td>
+            <td>
+                <select name="看诊医生" style="width: 120px;">
+                    <option value="张三有">张三有</option>
+                    <option value="钟南山">钟南山</option>
+                    <option value="韩尚辰">韩尚辰</option>
+                    <option value="张勇">张勇</option>
+                    <option value="陆芃博">超级无敌嘎嘎权威陆芃博</option>
+                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>初始金额：</td>
+            <td><input type="text" name="初始金额" ></td>
+            <td>已用号额：</td>
+            <td>
+                <input type="text" name="已用号额" style="width: 120px;">
+           
+            </td>
+            <td>病历本：</td>
+            <td>
+                <select name="病历本" style="width: 100px;">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>应收金额：</td>
+            <td>
+                <input type="text" name="挂号金额" >
+            </td>
+            <td >收费方式：
+            <td>
+                <select name="收费方式：" style="width: 120px;">
+                    <option value="现金">现金</option>
+                    <option value="微信">微信</option>
+                    <option value="支付宝">支付宝</option>
+                    <option value="医保卡">医保卡</option>
+                    <option value="农合卡">农合卡</option>
+                </select>
+            </td>
+        </tr>
+</body>
+</html>
